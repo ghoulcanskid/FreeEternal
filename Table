@@ -1,0 +1,128 @@
+getgenv().Eternal = {
+    Options = {
+      ['Gui'] = false, -- wip
+      ['Notifications'] = true, -- wip
+      ['Intro'] = true, -- :3
+    },
+    Panic = { -- disables a specific feature
+      ['Enabled'] = true,
+      ['Key'] = "q",
+      ['Panic_Type'] = "Silent Aim", -- Silent Aim, Aim Assist -- WIP
+    },
+    BulletAssist = { -- this is silent aim
+      ['Toggle'] = "P",
+      ['Enabled'] = true,
+      ['Prediction'] = 0.12224646,
+      ['Humanize'] = true, -- (wip)
+      ['NearestPart'] = true,
+      ['Humanize_Value'] = 12,
+      ['HitPart'] = "UpperTorso",
+      ['Random_Hitpart'] = true,-- (wip)
+      ['Type'] = true, 
+      ['Closest_Type'] = "Closest Point",
+      ['HitChance'] = 100, 
+      ['AirShot_Function'] = true,
+      ['Airshot_Part'] = "UpperTorso",
+    },
+    FOV = { 
+      ['Visible'] = true,
+      ['Size'] = 32.5,
+      ['NumSides'] = 1000,
+      ['Transparency'] = 0.7,
+      ['UseKey'] = true,
+      ['Keybind'] = "M",
+      ['Filled'] = false,
+      ['Thickness'] = 0.7,
+      ['Rainbow'] = false,
+      ['Color'] = Color3.new(100, 0, 100),
+    },
+    Aim_Assist = {
+      ['Key'] = "C", 
+      ['Enabled'] = true,
+      ['Part'] = "HumanoidRootPart",
+      ['UseMouseKey'] = false, -- (wip)
+      ['MouseKey'] = Enum.UserInputType.MouseButton2,
+      ['Nearestpart'] = false,
+      ['PredictPlr'] = true,
+      ['Prediction'] = 0.07,
+      ['AirshotFunc'] = false,
+      ['AirshotPart'] = "HumanoidRootPart",
+      ['Smoothing'] = false,
+      ['Smoothness'] = 1, 
+    }, 
+    Shake = {
+      ['Shake'] = false, -- (wip)
+      ['Shake_Value'] = {
+         ['X']= 10,
+         ['Y'] = 2,
+         ['Z'] = 5,
+        }
+    },
+    Checks = {
+        Silent = {
+           ['Grabbed_Check'] = true,
+           ['Crew_Check'] = true,
+           ['WallCheck'] = true,
+           ['KoCheck'] = true,
+           ['FriendCheck'] = true,
+     },
+     Aim_Assist = {
+           ['WallCheckPlr'] = true,       
+           ['Visible_Check'] = true,
+           ['UnlockOnPlrsDeath'] = true, -- knocked check
+        }
+    },    
+    FOV_2 = {
+      ['Visible'] = false,
+      ['Size'] = 62,
+    },  
+    Misc = {
+      ['AntiCheat_Bypasser'] = true, -- wip but using low fov is good for playing a little longer
+    },
+    Resolver = {
+      ['AimViewerBypass'] = true, -- (WIP)
+      ['Resolve'] = true,
+      ['Type'] = "Velocity Recalculation", --  Velocity Recalculation, Velocity, Movedirection, Network Sleeper
+    },    
+    Macro = {
+      ['Enabled'] = true,
+      ['Type'] = "First Person", -- IOIO / First Person
+      ['Key'] = "q",
+      ['Speed'] = 1,
+    },
+    FPS_Unlocker = {
+      ['Enabled'] = true, -- fps unlocker
+      ['Cap'] = 300, 
+    },  
+    Key360 = {
+      ['Toggle'] = false, 
+      ['RotationSpeed'] = 1000,
+      ['Keybind'] = Enum.KeyCode.V
+    },
+    Safety_Measures = {
+      ['NoGroundShots'] = true, 
+      ['DisableOutSideOfFOV'] = true,
+      ['DisableWhenYourKnocked'] = true,
+      ['CheckIfKnocked'] = true,
+    },
+    AutoPrediction = {
+      ['Enabled'] = true,
+      ['Tick'] = 0.1,
+      ['Ping_10'] = 0.1060,
+      ['Ping_20'] = 0.1110,
+      ['Ping_30'] = 0.1190,
+      ['Ping_40'] = 0.1230,
+      ['Ping_50'] = 0.1260,
+      ['Ping_60'] = 0.1290,  
+      ['Ping_70'] = 0.1300,
+      ['Ping_80'] = 0.1305,
+      ['Ping_90'] = 0.1315,
+      ['Ping_100'] = 0.1345,
+      ['Ping_150'] = 0.1405,
+      ['Ping_160_170'] = 0.1434,
+      ['Ping_180_190'] = 0,1252352,
+      ['Ping_200'] = 0.12,
+      
+    },
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ghoulcanskid/FreeEternal/main/BlantantHitbox"))()
